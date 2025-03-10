@@ -4,12 +4,13 @@ from data_collector import create_exchange, fetch_ohlcv_data
 from strategy import generate_signal
 from trading_engine import execute_order, check_position_and_close, current_position, reset_position
 from logger import setup_logger
-from config import DEFAULT_SYMBOL, DEFAULT_TIMEFRAME
+from config import DEFAULT_SYMBOL, DEFAULT_TIMEFRAME, DEFAULT_POSITION_SIZE
 
 def main():
     logger = setup_logger()
     exchange = create_exchange()
-    amount = 0.05
+    amount = DEFAULT_POSITION_SIZE
+    last_candle_ts = None
 
     while True:
         try:
