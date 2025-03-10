@@ -1,20 +1,41 @@
 import ccxt
+import os
 import pandas as pd
-import numpy as np
+from config import API_KEY, SECRET_KEY, DEFAULT_SYMBOL, DEFAULT_TIMEFRAME
 
-def fetch_ohlcv_data(exchange, symbol, timeframe='5m', limit=100):
+
+def create_exchange():
     """
-    ccxt를 이용해 OHLCV(시가,고가,저가,종가,거래량) 데이터를 가져와 DataFrame으로 반환
+    ccxt의 binanceusdm 객체를 생성하여 반환합니다.
+    Testnet 환경을 위해 모든 관련 URL과 옵션을 설정합니다.
     """
+    exchange = ccxt.binanceusdm({
+        'apiKey': API_KEY,
+        'secret': SECRET_KEY,
+        'enableRateLimit': True,
+        'options': {
+            'defaultType': 'future',
+            'fetchCurrencies': False,  # load_markets() 시 fetch_currencies() 호출 방지
+        },
+        'urls': {
+            'api': {
+                'public':      'https://testnet.binancefuture.com/fapi/v1',
+                'private':     'https://testnet.binancefuture.com/fapi/v1',
+                'fapiPublic':  'https://testnet.binancefuture.com/fapi/v1',
+                'fapiPrivate': 'https://testnet.binancefuture.com/fapi/v1',
+                'sapi':        'https://testnet.binancefuture.com/sapi/v1',
+            }
+        }
+    })
+    return exchange
+
+def fetch_ohlcv_data(exchange, symbol=None, timeframe=None, limit=100):
+    if symbol is None:
+        symbol = DEFAULT_SYMBOL
+    if timeframe is None:
+        timeframe = DEFAULT_TIMEFRAME
+    
     ohlcv = exchange.fetch_ohlcv(symbol, timeframe=timeframe, limit=limit)
     df = pd.DataFrame(ohlcv, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
     df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
-    return df
-
-def calculate_moving_averages(df, short_window=5, long_window=20):
-    """
-    단기/장기 이동평균 컬럼을 DataFrame에 추가
-    """
-    df['ma_short'] = df['close'].rolling(window=short_window).mean()
-    df['ma_long'] = df['close'].rolling(window=long_window).mean()
     return df
