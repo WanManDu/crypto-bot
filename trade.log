@@ -146,3 +146,69 @@ TypeError: NDFrame.rolling() got an unexpected keyword argument 'term'
 [2025-03-11 07:05:42,538] INFO - Signal: hold, last_price=79405.6
 [2025-03-11 07:06:42,621] INFO - Signal: hold, last_price=79573.6
 [2025-03-11 07:07:42,709] INFO - Signal: hold, last_price=79573.6
+[2025-03-11 07:08:42,780] INFO - Signal: hold, last_price=79356.5
+[2025-03-11 07:09:42,852] INFO - Signal: hold, last_price=79448.9
+[2025-03-11 07:10:42,933] INFO - Signal: hold, last_price=79302.6
+[2025-03-11 07:11:43,009] INFO - Signal: hold, last_price=79468.4
+[2025-03-11 07:12:43,089] INFO - Signal: hold, last_price=79468.4
+[2025-03-11 07:13:43,164] INFO - Signal: hold, last_price=79478.3
+[2025-03-11 07:14:43,238] INFO - Signal: hold, last_price=79489.0
+[2025-03-11 07:15:43,331] INFO - Signal: hold, last_price=79491.9
+[2025-03-11 07:16:43,409] INFO - Signal: hold, last_price=79491.9
+[2025-03-11 07:17:43,497] INFO - Signal: hold, last_price=79208.7
+[2025-03-11 07:18:43,568] INFO - Signal: hold, last_price=79205.0
+[2025-03-11 07:19:43,650] INFO - Signal: hold, last_price=79402.9
+[2025-03-11 07:20:43,743] INFO - Signal: hold, last_price=79406.8
+[2025-03-11 07:21:43,818] INFO - Signal: hold, last_price=79229.8
+[2025-03-11 07:22:43,886] INFO - Signal: hold, last_price=79180.3
+[2025-03-11 07:23:43,973] INFO - Signal: hold, last_price=79180.3
+[2025-03-11 07:24:44,048] INFO - Signal: hold, last_price=79377.5
+[2025-03-11 07:25:44,128] INFO - Signal: hold, last_price=79390.0
+[2025-03-11 07:26:44,202] INFO - Signal: hold, last_price=79343.9
+[2025-03-11 07:27:44,276] INFO - Signal: hold, last_price=79343.9
+[2025-03-11 07:28:44,340] INFO - Signal: hold, last_price=79150.8
+[2025-03-11 07:29:44,579] INFO - Signal: hold, last_price=79392.4
+[2025-03-11 07:30:44,648] INFO - Signal: hold, last_price=79377.1
+[2025-03-11 07:31:44,728] INFO - Signal: hold, last_price=79400.0
+[2025-03-11 07:32:44,804] INFO - Signal: sell, last_price=79130.0
+[2025-03-11 07:32:45,002] INFO - [execute_order] side=sell, entry_price=79130.0, stop_loss=79921.3, take_profit]77943.05
+[2025-03-11 07:33:45,061] INFO - Signal: sell, last_price=79130.0
+[2025-03-11 07:33:45,062] INFO - Position already open. Ignoring new signal.
+[2025-03-11 07:34:45,135] INFO - Signal: sell, last_price=79126.9
+[2025-03-11 07:34:45,137] INFO - Position already open. Ignoring new signal.
+[2025-03-11 07:35:45,386] INFO - Signal: sell, last_price=79125.9
+[2025-03-11 07:35:45,387] INFO - Position already open. Ignoring new signal.
+[2025-03-11 07:36:45,625] INFO - Signal: hold, last_price=79370.0
+[2025-03-11 07:37:45,700] INFO - Signal: hold, last_price=79118.4
+[2025-03-11 07:38:45,777] INFO - Signal: hold, last_price=79112.3
+[2025-03-11 07:39:45,850] INFO - Signal: hold, last_price=79112.3
+[2025-03-11 07:40:45,926] INFO - Signal: hold, last_price=79110.0
+[2025-03-11 07:41:46,041] INFO - Signal: buy, last_price=79391.6
+[2025-03-11 07:41:46,043] INFO - Position already open. Ignoring new signal.
+[2025-03-11 07:42:46,119] INFO - Signal: hold, last_price=79094.8
+[2025-03-11 07:43:46,201] INFO - Signal: buy, last_price=79398.5
+[2025-03-11 07:43:46,202] INFO - Position already open. Ignoring new signal.
+[2025-03-11 07:44:46,285] INFO - Signal: buy, last_price=79357.1
+[2025-03-11 07:44:46,286] INFO - Position already open. Ignoring new signal.
+[2025-03-11 07:45:46,357] INFO - Signal: hold, last_price=79325.4
+[2025-03-11 07:46:46,446] INFO - Signal: hold, last_price=79325.4
+[2025-03-11 07:47:46,534] INFO - Signal: hold, last_price=79357.0
+[2025-03-11 07:48:46,610] INFO - Signal: hold, last_price=79066.0
+[2025-03-11 07:49:46,688] INFO - Signal: hold, last_price=79385.0
+[2025-03-11 07:50:46,761] INFO - Signal: hold, last_price=79159.0
+[2025-03-11 07:51:46,836] INFO - Signal: hold, last_price=79159.0
+[2025-03-11 07:52:46,926] INFO - Signal: hold, last_price=79404.0
+[2025-03-11 07:53:46,998] INFO - Signal: hold, last_price=79408.6
+[2025-03-11 07:54:47,077] INFO - Signal: hold, last_price=79412.2
+[2025-03-11 07:55:47,150] INFO - Signal: hold, last_price=79415.2
+[2025-03-11 07:56:47,249] INFO - Signal: hold, last_price=79302.2
+[2025-03-11 07:57:47,329] INFO - Signal: hold, last_price=79302.2
+[2025-03-11 07:58:47,403] INFO - Signal: hold, last_price=79290.5
+[2025-03-11 07:59:47,475] INFO - Signal: hold, last_price=79424.9
+[2025-03-11 08:00:47,564] INFO - Signal: hold, last_price=79265.9
+[2025-03-11 08:01:47,634] INFO - Signal: hold, last_price=79247.9
+[2025-03-11 08:02:47,710] INFO - Signal: hold, last_price=79434.7
+[2025-03-11 08:03:47,802] INFO - Signal: hold, last_price=79438.0
+[2025-03-11 08:04:47,878] INFO - Signal: hold, last_price=79438.0
+[2025-03-11 08:05:47,946] INFO - Signal: hold, last_price=79272.0
+[2025-03-11 08:06:48,050] INFO - Signal: hold, last_price=79443.8

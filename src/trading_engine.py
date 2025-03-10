@@ -38,7 +38,7 @@ def execute_order(exchange, symbol, side, amount, last_price, sl_ratio=0.01, tp_
         logging.info("No valid side to execute order.")
         return None
     
-    logging.info(f"[execute_order] side={side}, entry_price={entry_price}, stop_loss={stop_loss}, take_profit]{take_profit}")
+    logging.info(f"[execute_order] side={side}, entry_price={entry_price}, stop_loss={stop_loss}, take_profit={take_profit}")
     return order
 
 def check_position_and_close(exchange, symbol, last_price, amount):

@@ -35,4 +35,4 @@ SECRET_KEY = os.getenv("BINANCE_TESTNET_SECRET_KEY")
 
 # 필요한 경우, 거래 심볼, 타임프레임 등 설정도 여기에 넣을 수 있음
 DEFAULT_SYMBOL = "BTC/USDT"
-DEFAULT_TIMEFRAME = "5m"
+DEFAULT_TIMEFRAME = "4h"
